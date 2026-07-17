@@ -1,340 +1,324 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tharvesh Muhaideen A - Resume | Passionate about Python, Web Development & IoT">
-    <title>Tharvesh Muhaideen A | Resume</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
-        
-        :root {
-            --tw-color-primary: #0a2540;
-        }
-        
-        * {
-            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-duration: 150ms;
-        }
-        
-        .resume-header {
-            font-family: 'Space Grotesk', sans-serif;
-        }
-        
-        .sidebar {
-            background: linear-gradient(180deg, #0a2540 0%, #112b4a 100%);
-        }
-        
-        .project-card {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        
-        .project-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-        }
-        
-        .print\:hidden {
-            display: none;
-        }
-    </style>
-</head>
-<body class="bg-zinc-50 font-sans">
-    <!-- HEADER -->
-    <header class="bg-white border-b border-zinc-200 sticky top-0 z-50 shadow-sm">
-        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-            <div class="flex items-center gap-x-4">
-                <div class="w-9 h-9 bg-[#0a2540] rounded-2xl flex items-center justify-center text-white text-xl font-bold">TM</div>
-                <div>
-                    <h1 class="resume-header text-3xl font-semibold tracking-tighter text-[#0a2540]">THARVESH MUHAIDEEN A</h1>
-                    <p class="text-sm text-zinc-500 tracking-widest uppercase">passionate about Python | Web-Development | IoT</p>
-                </div>
-            </div>
-            
-            <!-- Social Links -->
-            <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
-                <a href="#" onclick="alert('Add your LinkedIn URL in the HTML')" 
-                   class="flex items-center gap-x-1.5 text-[#0a2540] hover:text-blue-600">
-                    <span class="text-lg">🔗</span>
-                    LINKEDIN
-                </a>
-                <a href="#" onclick="alert('Add your GitHub URL in the HTML')" 
-                   class="flex items-center gap-x-1.5 text-[#0a2540] hover:text-blue-600">
-                    <span class="text-lg">🐙</span>
-                    GITHUB
-                </a>
-                <a href="#" onclick="alert('Add your Website URL in the HTML')" 
-                   class="flex items-center gap-x-1.5 text-[#0a2540] hover:text-blue-600">
-                    <span class="text-lg">🌐</span>
-                    WEBSITE
-                </a>
-            </div>
-            
-            <div class="flex items-center gap-x-3">
-                <button onclick="window.print()" 
-                        class="flex items-center gap-x-2 px-5 py-2.5 bg-white border border-zinc-300 hover:border-zinc-400 rounded-2xl text-sm font-medium text-zinc-700">
-                    <span>🖨️</span>
-                    <span>Print / PDF</span>
-                </button>
-                <div class="md:hidden text-[#0a2540] text-2xl cursor-pointer" onclick="toggleMobileMenu()">
-                    ☰
-                </div>
-            </div>
-        </div>
-        
-        <!-- Mobile Menu -->
-        <div id="mobileMenu" class="hidden md:hidden bg-white border-t px-6 py-4">
-            <div class="flex flex-col gap-y-4 text-sm font-medium">
-                <a href="#" class="flex items-center gap-x-2 text-[#0a2540]">🔗 LINKEDIN</a>
-                <a href="#" class="flex items-center gap-x-2 text-[#0a2540]">🐙 GITHUB</a>
-                <a href="#" class="flex items-center gap-x-2 text-[#0a2540]">🌐 WEBSITE</a>
-            </div>
-        </div>
-    </header>
 
-    <div class="max-w-7xl mx-auto px-6 py-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
-        
-        <!-- MAIN CONTENT -->
-        <div class="lg:col-span-8 space-y-10">
-            
-            <!-- OBJECTIVE -->
-            <section>
-                <h2 class="text-xs uppercase tracking-[2px] font-semibold text-zinc-400 mb-3">OBJECTIVE</h2>
-                <div class="bg-white border border-zinc-100 shadow-sm rounded-3xl p-8 text-zinc-700 leading-relaxed">
-                    As an Electronics and Communication Engineering student with a strong foundation in Python and Web Development, I aim to contribute to impactful software projects by leveraging my knowledge in frontend/backend technologies, AI tools, and system integration. I aspire to grow into a full-stack developer capable of delivering scalable software solutions.
-                </div>
-            </section>
-            
-            <!-- EDUCATION -->
-            <section>
-                <h2 class="text-xs uppercase tracking-[2px] font-semibold text-zinc-400 mb-3">EDUCATION</h2>
-                <div class="space-y-6">
-                    <div class="flex flex-col md:flex-row gap-6 bg-white border border-zinc-100 shadow-sm rounded-3xl p-8">
-                        <div class="md:w-2/5">
-                            <h3 class="font-semibold text-lg">UG in Electronics And Communication Engineering</h3>
-                            <p class="text-zinc-500">E.G.S. Pillay Engineering College, Nagapattinam</p>
-                        </div>
-                        <div class="text-zinc-400 text-sm">November 2022 – Present</div>
-                    </div>
-                    
-                    <div class="flex flex-col md:flex-row gap-6 bg-white border border-zinc-100 shadow-sm rounded-3xl p-8">
-                        <div class="md:w-2/5">
-                            <h3 class="font-semibold text-lg">HSC</h3>
-                            <p class="text-zinc-500">National Higher Secondary School, Nagapattinam</p>
-                        </div>
-                        <div class="text-zinc-400 text-sm">June 2021 – May 2022</div>
-                    </div>
-                    
-                    <div class="flex flex-col md:flex-row gap-6 bg-white border border-zinc-100 shadow-sm rounded-3xl p-8">
-                        <div class="md:w-2/5">
-                            <h3 class="font-semibold text-lg">SSC</h3>
-                            <p class="text-zinc-500">National Higher Secondary School, Nagapattinam</p>
-                        </div>
-                        <div class="text-zinc-400 text-sm">June 2019 – May 2020</div>
-                    </div>
-                </div>
-            </section>
-            
-            <!-- PROJECTS -->
-            <section>
-                <h2 class="text-xs uppercase tracking-[2px] font-semibold text-zinc-400 mb-3">PROJECTS</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    
-                    <!-- Project 01 -->
-                    <div class="project-card bg-white border border-zinc-100 shadow-sm rounded-3xl p-6">
-                        <div class="text-[#0a2540] text-xs font-mono mb-2">01</div>
-                        <h4 class="font-semibold text-lg leading-tight mb-1">Smart Dining Order Management</h4>
-                        <p class="text-sm text-zinc-500">MINI Project Develop Using ESP8266 Webserver</p>
-                        <div class="mt-6 text-xs text-zinc-400">December 2024</div>
-                    </div>
-                    
-                    <!-- Project 02 -->
-                    <div class="project-card bg-white border border-zinc-100 shadow-sm rounded-3xl p-6">
-                        <div class="text-[#0a2540] text-xs font-mono mb-2">02</div>
-                        <h4 class="font-semibold text-lg leading-tight mb-1">Customized GPT for ONGC</h4>
-                        <p class="text-sm text-zinc-500">Intern-Project Develop using Python</p>
-                        <div class="mt-6 text-xs text-zinc-400">March 2025</div>
-                    </div>
-                    
-                    <!-- Project 03 -->
-                    <div class="project-card bg-white border border-zinc-100 shadow-sm rounded-3xl p-6">
-                        <div class="text-[#0a2540] text-xs font-mono mb-2">03</div>
-                        <h4 class="font-semibold text-lg leading-tight mb-1">Chatbot for user Interaction</h4>
-                        <p class="text-sm text-zinc-500">Develop using Flask Framework</p>
-                        <div class="mt-6 text-xs text-zinc-400">March 2025</div>
-                    </div>
-                    
-                    <!-- Project 04 -->
-                    <div class="project-card bg-white border border-zinc-100 shadow-sm rounded-3xl p-6">
-                        <div class="text-[#0a2540] text-xs font-mono mb-2">04</div>
-                        <h4 class="font-semibold text-lg leading-tight mb-1">Basic E-Commerce</h4>
-                        <p class="text-sm text-zinc-500">Workshop Terminal Project develop using Java</p>
-                        <div class="mt-6 text-xs text-zinc-400">May 2025</div>
-                    </div>
-                    
-                    <!-- Project 05 -->
-                    <div class="project-card bg-white border border-zinc-100 shadow-sm rounded-3xl p-6">
-                        <div class="text-[#0a2540] text-xs font-mono mb-2">05</div>
-                        <h4 class="font-semibold text-lg leading-tight mb-1">Claim Portal For My College</h4>
-                        <p class="text-sm text-zinc-500">Develop Front End using React Framework</p>
-                        <div class="mt-6 text-xs text-zinc-400">June 2025</div>
-                    </div>
-                    
-                    <!-- Project 06 -->
-                    <div class="project-card bg-white border border-zinc-100 shadow-sm rounded-3xl p-6">
-                        <div class="text-[#0a2540] text-xs font-mono mb-2">06</div>
-                        <h4 class="font-semibold text-lg leading-tight mb-1">Smart SoilSense with AI Integration</h4>
-                        <p class="text-sm text-zinc-500">Main Project Development in progress</p>
-                        <div class="mt-6 text-xs text-zinc-400">In Progress</div>
-                    </div>
-                </div>
-            </section>
-            
-            <!-- DECLARATION -->
-            <section class="pt-8 border-t border-zinc-200">
-                <h2 class="text-xs uppercase tracking-[2px] font-semibold text-zinc-400 mb-3">DECLARATION</h2>
-                <div class="bg-white border border-zinc-100 shadow-sm rounded-3xl p-8 text-sm leading-relaxed text-zinc-600">
-                    I hereby declare that all the information provided in this resume is true and accurate to the best of my knowledge. I take full responsibility for the correctness of the details.
-                </div>
-            </section>
-        </div>
-        
-        <!-- SIDEBAR -->
-        <div class="lg:col-span-4">
-            <div class="sidebar rounded-3xl px-8 py-8 text-white sticky top-8">
-                
-                <!-- Photo -->
-                <div class="flex justify-center mb-8">
-                    <div class="w-40 h-40 rounded-3xl overflow-hidden border-4 border-white/30 shadow-2xl">
-                        <img src="https://via.placeholder.com/320x320/0A2540/FFFFFF?text=THARVESH+MUHAIDEEN" 
-                             alt="Tharvesh Muhaideen A"
-                             class="w-full h-full object-cover">
-                        <!-- Replace the placeholder URL above with your actual photo URL (recommended 320x320 or larger) -->
-                    </div>
-                </div>
-                
-                <!-- DETAILS -->
-                <div class="mb-8">
-                    <h3 class="text-xs uppercase tracking-[1px] text-white/70 mb-4">DETAILS</h3>
-                    <div class="space-y-3 text-sm">
-                        <p>New Street, Nagapattinam - 611001</p>
-                        <a href="tel:+919994021042" class="flex items-center gap-x-2 hover:text-blue-300">
-                            📱 +91 9994021042
-                        </a>
-                        <a href="mailto:tharvesh2026@gmail.com" class="flex items-center gap-x-2 hover:text-blue-300">
-                            ✉️ tharvesh2026@gmail.com
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- SKILLS -->
-                <div class="mb-8">
-                    <h3 class="text-xs uppercase tracking-[1px] text-white/70 mb-4">SKILLS</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-white/10 text-white text-xs px-4 py-1 rounded-3xl">Python</span>
-                        <span class="bg-white/10 text-white text-xs px-4 py-1 rounded-3xl">Java (Basics)</span>
-                        <span class="bg-white/10 text-white text-xs px-4 py-1 rounded-3xl">HTML</span>
-                        <span class="bg-white/10 text-white text-xs px-4 py-1 rounded-3xl">CSS</span>
-                        <span class="bg-white/10 text-white text-xs px-4 py-1 rounded-3xl">JavaScript</span>
-                        <span class="bg-white/10 text-white text-xs px-4 py-1 rounded-3xl">React (Intermediate)</span>
-                        <span class="bg-white/10 text-white text-xs px-4 py-1 rounded-3xl">GitHub</span>
-                        <span class="bg-white/10 text-white text-xs px-4 py-1 rounded-3xl">VS Code</span>
-                        <span class="bg-white/10 text-white text-xs px-4 py-1 rounded-3xl">AI Tools</span>
-                        <span class="bg-white/10 text-white text-xs px-4 py-1 rounded-3xl">Embedded Systems</span>
-                        <span class="bg-white/10 text-white text-xs px-4 py-1 rounded-3xl">IoT</span>
-                    </div>
-                </div>
-                
-                <!-- AWARDS -->
-                <div class="mb-8">
-                    <h3 class="text-xs uppercase tracking-[1px] text-white/70 mb-4">AWARDS</h3>
-                    <ul class="space-y-3 text-sm">
-                        <li class="flex justify-between"><span>Best Mentorship</span><span class="text-white/60 text-xs">E.G.S.Pec (Apr 2025)</span></li>
-                        <li class="flex justify-between"><span>Entrepreneurship</span><span class="text-white/60 text-xs">E.G.S.Pec (Apr 2025)</span></li>
-                        <li class="flex justify-between"><span>Best Participant</span><span class="text-white/60 text-xs">HITaKEY (Oct 2024)</span></li>
-                        <li class="flex justify-between"><span>Star Student</span><span class="text-white/60 text-xs">E.G.S.Pec (Mar 2024)</span></li>
-                        <li class="flex justify-between"><span>Best Team Worker</span><span class="text-white/60 text-xs">club E.G.S.Pec (2024)</span></li>
-                    </ul>
-                </div>
-                
-                <!-- EXPERIENCE -->
-                <div class="mb-8">
-                    <h3 class="text-xs uppercase tracking-[1px] text-white/70 mb-4">EXPERIENCE</h3>
-                    <div class="space-y-5">
-                        <div>
-                            <p class="font-medium">Project Leader | Developer</p>
-                            <p class="text-sm text-white/70">15 day intern ONGC, Karaikal</p>
-                        </div>
-                        <div>
-                            <p class="font-medium">Founder &amp; Developer</p>
-                            <p class="text-sm text-white/70">TM Nexus (Startup), Nagapattinam</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- LANGUAGES -->
-                <div>
-                    <h3 class="text-xs uppercase tracking-[1px] text-white/70 mb-4">LANGUAGES</h3>
-                    <div class="flex justify-between items-center">
-                        <div>
-                            <span class="block text-sm">TAMIL</span>
-                            <span class="text-xs text-white/60">Native</span>
-                        </div>
-                        <div>
-                            <span class="block text-sm">ENGLISH</span>
-                            <span class="text-xs text-white/60">Intermediate</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- FOOTER -->
-    <footer class="bg-white border-t py-6 text-center text-xs text-zinc-400">
-        <p>© 2026 Tharvesh Muhaideen A • Built as a static resume website</p>
-    </footer>
-    
-    <!-- REQUESTED CDN WIDGET -->
-    <script src="https://nextrax-cdn.vercel.app/static/widget.js"></script>
-    
-    <script>
-        // Tailwind CDN initialization
-        function initializeTailwind() {
-            return {
-                config(userConfig = {}) {
-                    return {
-                        configUser: userConfig,
-                        theme: {
-                            extend: {
-                                fontFamily: {
-                                    header: ['Space Grotesk', 'sans-serif']
-                                }
-                            }
-                        }
-                    }
-                },
-                theme: {
-                    extend: {}
-                }
-            }
+    <!-- Primary SEO Meta Tags -->
+    <title>Tharvesh Muhaideen | Tharvbytes — Know a Little About Everything</title>
+    <meta name="title" content="Tharvesh Muhaideen | Tharvbytes — Know a Little About Everything">
+    <meta name="description" content="Tharvesh Muhaideen (Tharvesh2026) shares programming tutorials, Spring Boot projects, tech experiments, and daily learning on Tharvbytes. Curious mind. Know a little about everything.">
+    <meta name="keywords" content="Tharvesh Muhaideen, Tharvesh, Tharvesh2026, Tharvbytes, TM Nexus, Program Analyst, Spring Boot developer, tech YouTuber, curiosity channel, learning content creator, open source Tharvesh">
+    <meta name="author" content="Tharvesh Muhaideen">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://tharvesh2026.github.io/">
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tharvesh2026.github.io/">
+    <meta property="og:site_name" content="Tharvbytes">
+    <meta property="og:title" content="Tharvesh Muhaideen | Tharvbytes">
+    <meta property="og:description" content="Know a little about everything — programming, tech experiments, Spring Boot projects, and daily discoveries from Tharvesh Muhaideen (Tharvesh2026).">
+    <meta property="og:image" content="https://cdn.jsdelivr.net/gh/Tharvesh2026/Web-Source@refs/heads/main/Banner.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tharvesh Muhaideen | Tharvbytes">
+    <meta name="twitter:description" content="Programming, tech experiments, and curiosity-driven learning from Tharvesh Muhaideen. Know a little about everything.">
+    <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/Tharvesh2026/Web-Source@refs/heads/main/Banner.png">
+    <meta name="twitter:creator" content="@tharveshmuhaideen">
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#111111">
+    <meta name="msapplication-TileColor" content="#111111">
+
+    <style>
+        body {
+            margin:0;
+            padding:0;
+            background:#f7f7f5;
+            font-family: Inter, Arial, Helvetica, sans-serif;
+            color:#37352f;
         }
-        
-        // Initialize Tailwind
-        document.addEventListener('DOMContentLoaded', () => {
-            return initializeTailwind()
-        })
-        
-        // Mobile menu toggle
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobileMenu')
-            menu.classList.toggle('hidden')
+
+        .email-wrapper {
+            width:100%;
+            padding:30px 0;
         }
-        
-        // Print-friendly styles are already included via Tailwind
-        console.log('%c✅ Static resume website built successfully! Copy this entire code into a file named index.html and open it in your browser.', 'color: #0a2540; font-size: 13px; font-weight: 600')
+
+        .email-container {
+            max-width:620px;
+            margin:auto;
+            background:#ffffff;
+            border-radius:16px;
+            overflow:hidden;
+            border:1px solid #e9e9e7;
+        }
+
+        .banner {
+            width:100%;
+            height:auto;
+            display:block;
+        }
+
+        .content {
+            padding:35px;
+        }
+
+        .profile {
+            width:90px;
+            height:90px;
+            border-radius:50%;
+            margin-top:-70px;
+            border:5px solid #ffffff;
+            object-fit:cover;
+        }
+
+        h1 {
+            font-size:26px;
+            margin:20px 0 5px;
+            color:#111111;
+        }
+
+        .subtitle {
+            color:#787774;
+            font-size:15px;
+            margin-bottom:25px;
+        }
+
+        p {
+            font-size:16px;
+            line-height:1.7;
+            color:#444444;
+        }
+
+        .highlight {
+            background:#f7f6f3;
+            padding:18px;
+            border-radius:12px;
+            margin:25px 0;
+            font-size:16px;
+            line-height:1.6;
+        }
+
+        .button {
+            display:inline-block;
+            background:#111111;
+            color:#ffffff !important;
+            padding:13px 25px;
+            border-radius:8px;
+            font-weight:600;
+            margin:15px 0;
+        }
+
+        .center {
+            text-align:center;
+        }
+
+        .social {
+            margin-top:30px;
+            text-align:center;
+        }
+
+        .social img {
+            width:36px;
+            height:36px;
+            margin:0 7px;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        .footer {
+            background:#fafafa;
+            border-top:1px solid #eeeeee;
+            padding:25px;
+            text-align:center;
+            font-size:13px;
+            color:#777777;
+            line-height:1.6;
+        }
+
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Tharvesh Muhaideen",
+      "alternateName": ["Tharvesh2026", "Tharvesh", "TM Nexus", "Tharvbytes"],
+      "url": "https://tharvesh2026.github.io",
+      "image": "https://cdn.jsdelivr.net/gh/Tharvesh2026/Web-Source@refs/heads/main/profile.jpg",
+      "jobTitle": "Program Analyst",
+      "sameAs": [
+        "https://www.youtube.com/@tharveshmuhaideen",
+        "https://github.com/tharvesh2026",
+        "https://linkedin.com/in/tharvesh2005",
+        "https://dev.to/tharvbytes",
+        "https://medium.com/@tharveshmuhaideen"
+      ]
+    }
     </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Tharvbytes",
+      "url": "https://tharvesh2026.github.io",
+      "description": "Know a little about everything — tech experiments, Spring Boot projects, and curiosity-driven learning from Tharvesh Muhaideen.",
+      "author": {
+        "@type": "Person",
+        "name": "Tharvesh Muhaideen"
+      }
+    }
+    </script>
+
+</head>
+
+
+<body>
+
+<div class="email-wrapper">
+
+    <div class="email-container">
+
+
+        <img class="banner"
+             src="https://cdn.jsdelivr.net/gh/Tharvesh2026/Web-Source@refs/heads/main/Banner.png"
+             alt="Tharvbytes Banner">
+
+
+        <div class="content">
+
+
+            <img class="profile"
+                 src="https://cdn.jsdelivr.net/gh/Tharvesh2026/Web-Source@refs/heads/main/profile.jpg"
+                 alt="Tharvesh Muhaideen">
+
+
+            <h1>Hello I'm Tharvesh Muhaideen A</h1>
+
+            <div class="subtitle">
+                Program Analyst | Creator of Tharvbytes.dev
+            </div>
+
+
+            <p>
+                I hope you're having a great day!
+            </p>
+
+
+            <p>
+                I'm Tharvesh, a Program Analyst who loves exploring technology,
+                building solutions, and sharing knowledge with the developer community.
+            </p>
+
+
+            <p>
+                I started <strong>Tharvbytes.dev</strong> with a simple idea:
+            </p>
+
+
+            <div class="highlight">
+
+                <strong>
+                    𝐊𝐧𝐨𝐰 𝐚 𝐥𝐢𝐭𝐭𝐥𝐞 𝐚𝐛𝐨𝐮𝐭 𝐞𝐯𝐞𝐫𝐲𝐭𝐡𝐢𝐧𝐠.⁣
+                </strong>
+
+                <br><br>
+
+                A place where we can learn new things, build interesting projects,
+                and share ideas together.
+
+            </div>
+
+
+            <p>
+                Through my content, I share programming tutorials,
+                Spring Boot projects, development tips, technology insights,
+                and things I learn along the way.
+            </p>
+
+
+            <p>
+                I would love to have you as part of this growing community.
+                If my content helps you learn something new, consider subscribing
+                and following my journey.
+            </p>
+
+
+            <div class="center">
+
+                <a href="https://www.youtube.com/@tharveshmuhaideen"
+                   style="
+      background:#111111;
+      color:#ffffff;
+      padding:14px 24px;
+      display:inline-block;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:bold;">
+                    Join The Community
+                </a>
+
+            </div>
+
+
+
+            <div class="social">
+
+
+                <a href="https://dev.to/tharvbytes">
+                    <img src="https://cdn.jsdelivr.net/gh/Tharvesh2026/Web-Source@refs/heads/main/dev.png">
+                </a>
+
+
+                <a href="https://medium.com/@tharveshmuhaideen">
+                    <img src="https://cdn.jsdelivr.net/gh/Tharvesh2026/Web-Source@refs/heads/main/medium.png">
+                </a>
+
+
+                <a href="https://www.youtube.com/@tharveshmuhaideen">
+                    <img src="https://cdn.jsdelivr.net/gh/Tharvesh2026/Web-Source@refs/heads/main/youtube.png">
+                </a>
+
+
+                <a href="https://linkedin.com/in/tharvesh2005">
+                    <img src="https://cdn.jsdelivr.net/gh/Tharvesh2026/Web-Source@refs/heads/main/linkedin.png">
+                </a>
+
+
+                <a href="https://github.com/tharvesh2026">
+                    <img src="https://cdn.jsdelivr.net/gh/Tharvesh2026/Web-Source@refs/heads/main/google.png">
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer">
+
+            <strong>Tharvbytes.dev</strong><br>
+
+            Learn • Build • Share<br><br>
+
+            Thank you for being part of my journey ❤️
+
+        </div>
+
+
+    </div>
+
+</div>
+
 </body>
 </html>
